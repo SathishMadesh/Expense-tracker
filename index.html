@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="javascript" href="./javascript.js">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h2>expence tracker</h2>
+            <h4>your balance</h4>
+            <h1 id="balance">₹ 0.00</h1>
+            <div class="inc_exp">
+                <div class="inc">
+                    <h4>income</h4>
+                    <p id="inc-amt" class="amt pluss">₹ 0.00</p>
+                </div>
+                <div class="exp">
+                    <h4>expense</h4>
+                    <p id="exp-amt" class="amt minus">₹ 0.00</p>
+                </div>
+            </div>
+            <form action="#" id="form">
+
+                <div class="form-control">
+                    <label>Description:</label>
+                    <input id="desc" name="desc" type="text" placeholder="Discription">
+                </div>
+
+                <div class="form-control">
+                    <label>Amount:</label>
+                    <input id="amount" name="amount" type="number" placeholder="Amount">
+                </div>
+
+                <button class="btn" type="submit" >Add Transaction</button>
+
+            </form>
+        </div>
+        <div class="transaction">
+            <h2>Transaction Details</h2>
+            <ul id="trans" class="trans">
+                <li class="exp">Food <span>-500</span> <button class="del-btn">X</button> </li>
+                <li class="inc">Salary <span>35000</span> <button class="del-btn">X</button> </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="./javascript.js"></script>
+</body>
+</html>

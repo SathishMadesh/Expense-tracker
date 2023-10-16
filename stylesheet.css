@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat Poppins Ubuntu" , sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(244, 240, 240);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: rgb(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    user-select: none;
+}
+
+.info {
+    background-color: rgb(11, 9, 9);
+    padding: 20px;
+    flex: 1;
+    color: #fff;
+}
+
+.info h2 {
+    text-transform: uppercase;
+    color: gold;
+}
+
+.info h2,h4,h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.inc_exp {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.inc_exp div{
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.inc_exp div p{
+    font-size: 22px;
+}
+
+.inc_exp div.inc {
+    color: rgb(65, 210, 65);
+    border: 2px solid rgb(65, 210, 65);
+    border-radius: 3px;
+}
+
+.inc_exp div.exp {
+    color: red;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+#form {
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid #dedede;
+    display: block;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+}
+
+.btn {
+    background-color: aqua;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+}
+
+.transaction {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.transaction h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.trans {
+    list-style-type: none;
+}
+
+.trans li {
+    color: black;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px , rgba(27, 31, 35, 0.17) 0px 0px 0px 1px;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.trans li.inc {
+    border-left: 5px solid rgb(65, 210, 65);
+}
+
+.trans li.exp {
+    border-left: 5px solid red;
+}
+
+.del-btn {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.trans li:hover .del-btn {
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 8px;
+}
