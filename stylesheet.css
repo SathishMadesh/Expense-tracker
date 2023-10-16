@@ -9,9 +9,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: rgb(244, 240, 240);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .container {
